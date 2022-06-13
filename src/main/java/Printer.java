@@ -18,7 +18,7 @@ public class Printer {
     public String print(int copies, int pages) {
         int totalCopies = copies * pages;
 
-        if (totalCopies > sheetsOfPaper) {
+        if (totalCopies <= sheetsOfPaper) {
             sheetsOfPaper -= totalCopies;
             tonerVolume -= totalCopies;
             return "Printed " + totalCopies + " sheets of paper";
