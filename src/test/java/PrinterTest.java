@@ -17,7 +17,12 @@ public class PrinterTest {
     }
 
     @Test
-    public void canPrintPager() {
-        assertEquals("Printed 30 sheets of paper",printer.print(3, 10));
+    public void canPrintPages() {
+        assertEquals("Printed 30 sheets of paper", printer.print(3, 10));
+    }
+
+    @Test
+    public void cannotPrintPagesIfNotEnoughPaper() {
+        assertEquals("Not enough paper to print that", printer.print(200, 400));
     }
 }
