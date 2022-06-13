@@ -30,4 +30,10 @@ public class PrinterTest {
     public void hasTonerVolume() {
         assertEquals(1000, printer.getTonerVolume());
     }
+
+    @Test
+    public void tonerLowersWithUsage() {
+        printer.print(250, 2);
+        assertEquals(500, printer.getTonerVolume());
+    }
 }
