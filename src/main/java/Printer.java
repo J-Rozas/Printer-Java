@@ -6,8 +6,12 @@ public class Printer {
         sheetsOfPaper = sheetsOfPaper;
         tonerVolume = tonerVolume;
     }
-    
+
     public int getSheetsOfPaper() {
         return sheetsOfPaper;
+    }
+
+    public int getTonerVolume() {
+        return tonerVolume;
     }
 }
