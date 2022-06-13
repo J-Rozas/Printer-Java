@@ -1,3 +1,8 @@
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.testng.Assert.assertEquals;
+
 public class PrinterTest {
     Printer printer;
 
@@ -6,4 +11,8 @@ public class PrinterTest {
         printer = new Printer(600);
     }
 
+    @Test
+    public void hasSheetsOfPaper() {
+        assertEquals(600, printer.getSheetsOfPaper());
+    }
 }
