@@ -15,4 +15,9 @@ public class PrinterTest {
     public void hasSheetsOfPaper() {
         assertEquals(600, printer.getSheetsOfPaper());
     }
+
+    @Test
+    public void canPrintPager() {
+        assertEquals("Printed 30 sheets of paper",printer.print(3, 10));
+    }
 }
