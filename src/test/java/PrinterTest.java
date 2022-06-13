@@ -1,7 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class PrinterTest {
     Printer printer;
@@ -28,6 +28,6 @@ public class PrinterTest {
 
     @Test
     public void hasTonerVolume() {
-        assertEquals(970, printer.getTonerVolume());
+        assertEquals(1000, printer.getTonerVolume());
     }
 }
